@@ -78,6 +78,19 @@
           </grid>
         </children>
       </grid>
+      <grid id="353ae" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="f09dc" class="javax.swing.JLabel" binding="link_lb">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <text value="&lt;html&gt;&lt;a href=https://github.com/w22ee/EasySharedprefs &gt;https://github.com/w22ee/EasySharedprefs&lt;/a&gt;&lt;/html&gt;"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
     </children>
   </grid>
 </form>

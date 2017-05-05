@@ -7,7 +7,10 @@ import javax.swing.event.MouseInputAdapter;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.IOException;
+import java.net.URI;
 import java.util.ArrayList;
 
 public class SettingDialog extends JDialog {
@@ -18,6 +21,7 @@ public class SettingDialog extends JDialog {
     private JComboBox package_cobBox;
     private JLabel status_lb;
     private JLabel title_lb;
+    private JLabel link_lb;
     private JButton buttonOK;
     private ShellUtils shellUtils;
     private String pName = "me.ele.napos";
@@ -59,6 +63,19 @@ public class SettingDialog extends JDialog {
         perf_content.setMargin(insets);
 
         setLocationRelativeTo(null);
+
+        link_lb.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                URI l =  URI.create("https://github.com/w22ee/EasySharedprefs");
+                try {
+                    Desktop.getDesktop().browse(l);
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        });
     }
 
 
