@@ -1,6 +1,6 @@
 <idea-plugin>
   <id>com.dafa.plugin.easyperfs</id>
-  <name>easy_shared_prefs</name>
+  <name>android easy sharedprefs</name>
   <version>1.0</version>
   <vendor email="05killer@163.com" url="https://github.com/w22ee/EasySharedprefs">w22ee</vendor>
 
