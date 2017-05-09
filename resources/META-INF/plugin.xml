@@ -1,17 +1,15 @@
 <idea-plugin>
   <id>com.dafa.plugin.easyperfs</id>
   <name>android easy sharedprefs</name>
-  <version>1.1</version>
+  <version>1.2</version>
   <vendor email="05killer@163.com" url="https://github.com/w22ee/EasySharedprefs">w22ee</vendor>
 
   <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+      A android develop tool,which can be use for watch android debuggable app shared_prefs with out root in GUI.<br>
     ]]></description>
 
   <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+      add description<br>
     ]]>
   </change-notes>
 
