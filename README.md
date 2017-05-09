@@ -4,6 +4,11 @@
 
 A android develop tool,build for android studio or IntelliJ idea,which can be use for watch android debuggable app shared_prefs with out root in GUI. 
 
+## ScreenShot 
+
+![image](https://github.com/w22ee/EasySharedprefs/blob/master/screen_shot.png)
+
+
 ## Usage
 
 * donwload developHelper.zip , open preferences menu, find plugins option, install plugin.
