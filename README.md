@@ -12,3 +12,5 @@ A android develop tool,build for android studio or IntelliJ idea,which can be us
 
 * find plugin in telescope icon or HelpMenu first position，then open this plugin to use.
 
+* wait for scan package name,then select your debuggable app package name on the top, then all shared_prefs on left menu,enjoy.
+
