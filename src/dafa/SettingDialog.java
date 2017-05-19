@@ -58,7 +58,7 @@ public class SettingDialog extends JDialog {
 
         scroll_pane.setSize(200, 500);
 
-        Insets insets =  new Insets(5, 5, 5, 5);
+        Insets insets = new Insets(5, 5, 5, 5);
 
         perf_content.setMargin(insets);
 
@@ -68,7 +68,7 @@ public class SettingDialog extends JDialog {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
-                URI l =  URI.create("https://github.com/w22ee/EasySharedprefs");
+                URI l = URI.create("https://github.com/w22ee/EasySharedprefs");
                 try {
                     Desktop.getDesktop().browse(l);
                 } catch (IOException e1) {
@@ -177,7 +177,14 @@ public class SettingDialog extends JDialog {
             file_list.removeAll();
             perf_content.setText("");
             lastClick = -1;
-            file_list.setListData(currentList.toArray(new String[currentList.size()]));
+            ArrayList<String> showList = new ArrayList<>();
+            for (int i = 0; i < currentList.size(); i++) {
+                String curString = currentList.get(i);
+                if (!curString.isEmpty() && curString.contains("shared_prefs/")) {
+                    showList.add(curString.substring(curString.lastIndexOf('/')+1));
+                }
+            }
+            file_list.setListData(showList.toArray(new String[showList.size()]));
             file_list.addMouseListener(new MouseInputAdapter() {
                 @Override
                 public void mouseClicked(MouseEvent e) {

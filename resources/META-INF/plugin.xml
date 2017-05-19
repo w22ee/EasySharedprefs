@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>com.dafa.plugin.easyperfs</id>
   <name>android easy sharedprefs</name>
-  <version>1.3</version>
+  <version>1.4</version>
   <vendor email="05killer@163.com" url="https://github.com/w22ee/EasySharedprefs">w22ee</vendor>
 
   <description><![CDATA[
@@ -9,7 +9,7 @@
     ]]></description>
 
   <change-notes><![CDATA[
-      add description<br>
+      fix some phone can not use ls -1 order<br>
     ]]>
   </change-notes>
 

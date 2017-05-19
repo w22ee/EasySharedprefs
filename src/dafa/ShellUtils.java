@@ -113,11 +113,11 @@ public class ShellUtils {
 
 
     public void openDataFolder(String packageName, CommondCallback callback) {
-        runCommand("run-as " + packageName + " ls shared_prefs/ -1", callback);
+        runCommand("run-as " + packageName + " find shared_prefs/ -type f -name   \"*.xml\"   -print", callback);
     }
 
     public void watchPerf(String packageName, String perfName, CommondCallback callback) {
-        runCommand("run-as " + packageName + " cat shared_prefs/" + perfName, callback);
+        runCommand("run-as " + packageName + " cat " + perfName, callback);
     }
 
     public void getPackage(CommondCallback callback){
